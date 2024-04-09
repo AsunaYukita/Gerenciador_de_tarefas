@@ -2,30 +2,20 @@ package Controller;
 import java.util.ArrayList;
 import java.util.UUID;
 import Model.Usuario;
-
+import Model.Tarefa_java;
 public class Usuario_controller {
-	private ArrayList<Usuario>usuarios;
-	Usuario usuario = new Usuario(null, null, null, null, null);
+	private Usuario usuarios;
+
+	 public  Usuario criarProjeto(String tipo, Usuario titular) {
+	        String numeroID = UUID.randomUUID().toString(); // Gera um número de ID
+	        Usuario novaConta;
+			Usuario IdProjeto = null;
+			return IdProjeto;
+	 }
 
 
-	public String CriarUsuario(
-			String Nome, String CPF, 
-			String Celular, String Senha, String Email) 	{
-			Usuario usuarioNovo = new Usuario(CPF, Senha, Nome, Celular, Email);
-		usuarios.add(usuarioNovo);
-		return "Usuario cadastrado";
-		}
-	
-	public String Autenticacao(String email, String senha) {
-		if(usuario.getEmail() == email && usuario.getSenha() == senha) {
-			return "Autenticado";
-		} else {
-			return "Não autenticado";
-		}
-		
-	}	
+
+
+
 }
-	
-	
-	
 	
