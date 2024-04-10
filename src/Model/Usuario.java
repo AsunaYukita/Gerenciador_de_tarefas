@@ -2,9 +2,6 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.Usuario;
-import Model.Tarefa_java;
-import Model.Membro_equipe;
 public class Usuario {
 
 	
@@ -13,24 +10,49 @@ public class Usuario {
 	 public void adicionarUsuario(Usuario usuario) {
 	        usuarios.add(usuario);
 	    	}
-	 public Usuario buscarUsuario(String Nome, String ID) {
-	        for (Usuario usuarios : usuarios) {
-	            if (usuarios.getNome().equals(ID)) {
-	                return usuario;
-	            }else {
-	            	
-	        }
-	        return null;
-	public Usuario (String Nome, String ID, String prazo)	{
+	         
+	public Usuario (String Nome, String ID, String prazo, String descricao)	{
 		this.Nome = Nome;
 		this.ID = ID;
-		this.prazo = prazo;		
-	}
+		this.prazo = prazo;
+		this.descricao = descricao;
 		
-	        	}
-	 }
-	 
-}
+	}
+	
+	public String getID() {
+	    return ID;
+		}
 
+	public void setID(String ID) {
+	    this.ID = ID;
+		}
+	
+	public String getNome() {
+		return Nome;
+	}
+	
+    public void setNome(String Nome) {
+    	this.Nome = Nome;
+    }
+    
+    public String getprazo() {
+    	return prazo;
+    }
+    
+    public void setprazo(String prazo) {
+    	this.prazo = prazo;
+    }
+    
+    public String getdescricao() {
+    	return descricao;
+    }
+    
+    public void setdescricao(String descricao) {
+    	this.descricao = descricao;
+    }
+    
+    
+}
+	
 	        
 	        

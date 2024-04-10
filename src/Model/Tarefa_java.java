@@ -8,6 +8,7 @@ public class Tarefa_java {
 	    protected String descricao;
 	    protected String Nome;
 	    protected String prazo;
+	    
 
 public Tarefa_java(String IdProjeto, String Status, String descricao,String ID, String prazo) {
 	this.IdProjeto= IdProjeto;

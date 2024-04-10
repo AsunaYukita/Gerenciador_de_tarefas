@@ -10,8 +10,26 @@ public class Membro_equipe {
 		return this.Email = Email;
 	}
 	
-		
+	  // Getters e Setters
+    public String getNome() {
+        return Nome;
+    	}
 
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    	}
+    public String getID() {
+    	return ID;
+    	}
+    public void setID(String ID) {
+    	this.ID= ID;
+    	}
+    public String getEmail() {
+    	return Email;
+    	}
+    public void setEmail(String Email) {
+    	this.Email = Email;
+    	}
 
 
 
