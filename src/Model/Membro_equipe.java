@@ -30,6 +30,8 @@ public class Membro_equipe {
     public void setEmail(String Email) {
     	this.Email = Email;
     	}
+}
+	
 
 
 
